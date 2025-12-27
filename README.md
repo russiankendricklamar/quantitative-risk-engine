@@ -75,7 +75,7 @@ $$dX_t = X_t \left(w_t^T \mu \, dt + w_t^T \Sigma^{1/2} dW_t\right)$$
 
 **HJB-уравнение** (при отсутствии потребления):
 
-$$\rho V(X) = \max_{\pi} \left\{ \pi^T\mu \cdot V'(X) + \frac{1}{2}\pi^T\Sigma\pi \cdot V''(X) \right\}$$
+$$\rho V(X) = \max_{\pi} \\{ \pi^T\mu \cdot V'(X) + \frac{1}{2}\pi^T\Sigma\pi \cdot V''(X) \\}$$
 
 **Аналитическое решение** (Мертон, 1969) при $V(X) = \frac{X^{1-\gamma}}{1-\gamma}$:
 
