@@ -70,7 +70,7 @@ $$ V(t, x) = \sup_{w} \mathbb{E} \left[ U(X_T) \mid X_t = x \right] $$
 
 Она удовлетворяет уравнению в частных производных **Гамильтона — Якоби — Беллмана (HJB)**:
 
-$$ \frac{\partial V}{\partial t} + \sup_{w \in \mathbb{R}^n} \bigg\{ (rx + w^T(\mu - r\mathbf{1})x) \frac{\partial V}{\partial x} + \frac{1}{2} x^2 w^T \Sigma w \frac{\partial^2 V}{\partial x^2} \bigg\} = 0 $$
+$$ \frac{\partial V}{\partial t} + \sup_{w \in \mathbb{R}^n} \left[ (rx + w^T(\mu - r\mathbf{1})x) \frac{\partial V}{\partial x} + \frac{1}{2} x^2 w^T \Sigma w \frac{\partial^2 V}{\partial x^2} \right] = 0 $$
 
 Аналитическое решение для оптимальных весов портфеля $w^*$:
 
