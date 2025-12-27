@@ -110,9 +110,9 @@ $$ w^* = \frac{1}{\gamma} \Sigma^{-1} (\mu - r\mathbf{1}) $$
 
 | Metric | Описание | Формула / Метод |
 | :--- | :--- | :--- |
-| **VaR (Value at Risk)** | Максимальный ожидаемый убыток с уверенностью $(1-\alpha)$. | $\text{VaR}_{\alpha} = \inf \{ l \in \mathbb{R} : P(L > l) \le 1-\alpha \}$ |
-| **CVaR (Expected Shortfall)** | Средний убыток в хвосте распределения (за пределами VaR). Более когерентная мера риска. | $\text{ES}_{\alpha} = \frac{1}{1-\alpha} \int_{\alpha}^{1} \text{VaR}_u du$ |
-| **Maximum Drawdown** | Максимальное падение стоимости портфеля от пика до дна. | $\text{MDD} = \sup_{t \in [0,T]} \left( \sup_{s \in [0,t]} X_s - X_t \right)$ |
+| **VaR (Value at Risk)** | Максимальный ожидаемый убыток с уверенностью $(1-\alpha)$. | $P(L > \text{VaR}_{\alpha}) \le 1-\alpha$ |
+| **CVaR (Expected Shortfall)** | Средний убыток в хвосте распределения (за пределами VaR). Более когерентная мера риска. | $\text{ES}_{\alpha} = \frac{1}{1-\alpha} \int_{\alpha}^{1} \text{VaR}_{u} du$ |
+| **Maximum Drawdown** | Максимальное падение стоимости портфеля от пика до дна. | $\text{MDD} = \sup_{t} (\sup_{s < t} X_s - X_t)$ |
 | **Sharpe Ratio** | Отношение риск/доходность. | $S = \frac{E[R_p] - R_f}{\sigma_p}$ |
 
 ---
