@@ -9,17 +9,30 @@
 
 ---
 
-##  Table of Contents
-1.  [Executive Summary](#-executive-summary)
-2.  [Theoretical Framework](#-theoretical-framework)
-    *   [Stochastic Dynamics](#stochastic-dynamics)
-    *   [Volatility Modeling (GARCH)](#volatility-modeling-garch)
-    *   [Optimal Control (HJB Equation)](#optimal-control-hjb-equation)
-3.  [Technical Architecture](#-technical-architecture)
-4.  [Risk Analytics & Metrics](#-risk-analytics--metrics)
-5.  [Project Structure](#-project-structure)
-6.  [Installation & Usage](#-installation--usage)
-7.  [Disclaimer](#-disclaimer)
+## Table of Contents
+1. [Executive Summary](#executive-summary)
+2. [Математическая основа](#математическая-основа)
+   * [Задача Мертона и HJB-уравнение](#1-задача-мертона-и-hjb-уравнение)
+   * [Применение ограничений](#2-применение-ограничений)
+   * [GARCH(1,1) моделирование волатильности](#3-garch11-моделирование-волатильности)
+   * [Ковариационная матрица](#4-ковариационная-матрица)
+   * [Расчет доходностей](#5-расчет-доходностей)
+   * [Монте-Карло симуляция](#6-монте-карло-симуляция)
+   * [Метрики риска и доходности](#7-метрики-риска-и-доходности)
+3. [Ограничения и чувствительность](#ограничения-и-чувствительность)
+4. [Стресс-тестирование](#стресс-тестирование)
+   * [Базовые сценарии](#базовые-сценарии)
+   * [Экстремальные сценарии](#экстремальные-сценарии)
+   * [Анализ временных горизонтов](#анализ-временных-горизонтов)
+   * [Анализ чувствительности к γ](#анализ-чувствительности-к-γ)
+5. [Структура репозитория](#структура-репозитория)
+6. [Technical Architecture](#technical-architecture)
+6. [Установка](#установка)
+7. [Лицензия](#лицензия)
+8. [Контакты и поддержка](#контакты-и-поддержка)
+9. [Цитирование](#цитирование)
+10. [Disclaimer](#disclaimer)
+
 
 ## Executive Summary
 
