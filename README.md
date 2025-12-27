@@ -366,7 +366,7 @@ $T_h \in \{1/12, 1/4, 1, 3\}$ года, $N_h = \lfloor T_h \times 252 \rfloor$
 
 ---
 
-## 🎯 Best Practices
+## Best Practices
 
 ### 1. Входные данные
 
@@ -541,7 +541,7 @@ openpyxl>=3.10.0      # Excel экспорт
 
 ---
 
-## 🚀 Roadmap
+## Roadmap
 
 ### Phase 1: Core Features
 - [x] MOEX ISS API интеграция
