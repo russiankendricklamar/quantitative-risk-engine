@@ -9,8 +9,6 @@
 
 > **Advanced framework for stochastic portfolio modeling, volatility regime analysis, and optimal control (HJB) strategy implementation for Russian financial markets.**
 
-[Quick Start](#-quick-start) • [Documentation](#-documentation) • [Examples](#-examples) • [Issues](https://github.com/russiankendricklamar/quantitative-risk-engine/issues)
-
 </div>
 
 ---
@@ -169,8 +167,6 @@ $$r_i(t) = \ln\left(\frac{P_i(t)}{P_i(t-1)}\right)$$
 
 $$\mu_i^{\text{capital}} = \bar{\mu}_i^{\text{daily}} \times 252$$
 
-где $\bar{\mu}_i^{\text{daily}} = \frac{1}{T-1} \sum_{t=2}^T r_i(t)$
-
 **Дивидендная доходность:**
 
 $$y_i^{\text{div}} = \frac{\sum_{k=1}^{N_{\text{div}}} D_i(t_k)}{P_i(t_{\text{current}})}$$
@@ -181,7 +177,7 @@ $$\mu_i = \mu_i^{\text{capital}} + y_i^{\text{div}}$$
 
 **Корректировка за корпоративные действия** (сплиты акций):
 
-$$P_{\text{adj}}^i(t) = \begin{cases} P^i(t) \cdot m, & t < t_{\text{split}} \\ P^i(t), & t \geq t_{\text{split}} \end{cases}$$
+$$P_{\text{adj}}^i(t) = P^i(t) \cdot m, & t < t_{\text{split}} \\ P^i(t), & t \geq t_{\text{split}}$$
 
 где $m$ — коэффициент сплита.
 
@@ -193,7 +189,7 @@ $$X_{t+\Delta t} = X_t \left(1 + w^T\mu \cdot \Delta t + w^T L Z_t \sqrt{\Delta 
 
 где:
 - $\Delta t = 1/252$ (шаг = 1 торговый день)
-- $L$ — нижняя треугольная матрица разложения Cholesky ($\Sigma = LL^T$)
+- $L$ — нижняя треугольная матрица разложения Холецкого ($\Sigma = LL^T$)
 - $Z_t \sim N(0, I_n)$ — стандартный нормальный вектор
 
 **Параметры симуляции:**
@@ -506,8 +502,8 @@ stochastic-portfolio-optimization/
 ### Шаг 1: Клонирование репозитория
 
 ```bash
-git clone https://github.com/yourusername/stochastic-portfolio-optimization.git
-cd stochastic-portfolio-optimization
+git clone https://github.com/yourusername/quantitative-risk-engine.git
+cd quantitative-risk-engine
 ```
 
 ### Шаг 2: Создание виртуального окружения
@@ -607,11 +603,11 @@ MIT License. See LICENSE file for details.
 Если вы используете этот код в научной работе, пожалуйста цитируйте:
 
 ```bibtex
-@software{stochastic_portfolio_hjb,
+@software{quantitative-risk-engine,
   author = {Your Name},
   title = {Stochastic Portfolio Optimization via HJB Strategy with Stress-Testing},
   year = {2025},
-  url = {https://github.com/yourusername/stochastic-portfolio-optimization}
+  url = {https://github.com/yourusername/quantitative-risk-engine}
 }
 ```
 
